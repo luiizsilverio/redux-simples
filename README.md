@@ -8,8 +8,8 @@
 * [Contato](#email-contato)
 
 ## Sobre o projeto
-Projeto simples desenvolvido em React com Redux, desenvolvido durante o curso [Curso React + Redux: Fundamentos](https://www.udemy.com/course/react-redux-pt/) do professor Leonardo M. Leitão, da Cod3r.<br />
-O Redux armazena um estado com 2 valores, que são utilizados em todos os componentes da aplicação.<br />
+Projeto simples desenvolvido em React com Redux, desenvolvido durante o curso [Curso React + Redux: Fundamentos](https://www.udemy.com/course/react-redux-pt/), do professor Leonardo M. Leitão.<br />
+O componente Intervalo altera o valor dos estados, por meio do useDispatch e os demais componentes acessam o valor dos estados, por meio do useSelector.<br />
 
 ## :hammer_and_wrench: Tecnologias
 * __React__
