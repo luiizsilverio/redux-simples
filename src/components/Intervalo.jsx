@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 
 import Card from './Card'
 import './Intervalo.css'
-import { ATUALIZA_MIN, ATUALIZA_MAX } from '../store/appReducer'
+import { actions } from '../store/appReducer'
 
 const Intervalo = (props) => {
     const [vlmin, setVlmin] = useState(0)
@@ -13,13 +13,13 @@ const Intervalo = (props) => {
     function handleSetMin(value) {
       const valor = parseInt(value)
       setVlmin(valor)
-      dispatch({ type: ATUALIZA_MIN, vlMinimo: valor })
+      dispatch({ type: actions.ATUALIZA_MIN, vlMinimo: valor })
     }
 
     function handleSetMax(value) {
       const valor = parseInt(value)
       setVlmax(valor)
-      dispatch({ type: ATUALIZA_MAX, vlMaximo: valor })
+      dispatch({ type: actions.ATUALIZA_MAX, vlMaximo: valor })
     }
 
     return (
